@@ -6,7 +6,7 @@ I obtained my Bachelor's degree in Math and Applied Math at Sichuan University, 
 
 ## Preprints
 
-- Facundo Mémoli and Ling Zhou. Persistent Homotopy Groups of Metric Spaces. [ArXiv, Dec 2019](https://arxiv.org/abs/1912.12399).
+- Facundo Mémoli and Ling Zhou. Persistent Homotopy Groups of Metric Spaces. [ArXiv, Dec 2019](https://arxiv.org/abs/1912.12399). [Talk](https://mbi.osu.edu/events/mbi-seminar-series-ling-zhou) given in MBI Seminar Series at OSU, Sep 2020.
 
 ## Papers
 
