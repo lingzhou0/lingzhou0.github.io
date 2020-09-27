@@ -6,10 +6,10 @@ I obtained my Bachelor's degree in Math and Applied Math at Sichuan University, 
 
 ## Preprints
 
-- Facundo Mémoli and Ling Zhou. Persistent Homotopy Groups of Metric Spaces. [ArXiv, Dec 2019](https://arxiv.org/abs/1912.12399). [Talk](https://mbi.osu.edu/events/mbi-seminar-series-ling-zhou) given in MBI Seminar Series at OSU, Sep 2020.
+- Facundo Mémoli and Ling Zhou. [Persistent Homotopy Groups of Metric Spaces](https://arxiv.org/abs/1912.12399). ArXiv, Dec 2019. [Talk](https://mbi.osu.edu/events/mbi-seminar-series-ling-zhou) given in MBI Seminar Series at OSU, Sep 2020.
 
 ## Papers
 
-- Tong Qin, Ling Zhou and Dongbin Xiu. Reducing Parameter Space for Neural Network Training. [Accepted by Theoretical and Applied Mechanics Letters](https://arxiv.org/abs/1805.08340).
+- Tong Qin, Ling Zhou and Dongbin Xiu. [Reducing Parameter Space for Neural Network Training](https://arxiv.org/abs/1805.08340). Accepted by Theoretical and Applied Mechanics Letters.
 
-- Jing-Song Huang and Ling Zhou. Generalized Fourier Transforms Associated with the Oscillator Representation. [Journal of Fourier Analysis and Applications 25 (5), 2782-2800, Apr 2019](https://link.springer.com/article/10.1007/s00041-019-09682-0).
+- Jing-Song Huang and Ling Zhou. [Generalized Fourier Transforms Associated with the Oscillator Representation](https://link.springer.com/article/10.1007/s00041-019-09682-0). Journal of Fourier Analysis and Applications 25 (5), 2782-2800, Apr 2019.
