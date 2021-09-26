@@ -19,6 +19,6 @@ I obtained my Bachelor's degree in Math and Applied Math at Sichuan University, 
 
 ## Talks
 
-- Other Persistence Invariants: homotopy and the cohomology ring. [Online workshop "Beyond TDA -- Persistent topology and its applications in data sciences"](https://personal.ntu.edu.sg/XIAKELIN/TDAconf.html), Aug 2021. [Youtube](ttps://www.youtube.com/watch?v=T3SMuKf8ueo)
-- Persistent homotopy groups of metric spaces. [AATRN](https://tgda.osu.edu/atmcs2020/atmcs-2020-talks-hosted-by-the-aatn/), Jan 2021. [Youtube](https://mbi.osu.edu/events/mbi-seminar-series-ling-zhou)
+- Other Persistence Invariants: homotopy and the cohomology ring. [Online workshop "Beyond TDA -- Persistent topology and its applications in data sciences"](https://personal.ntu.edu.sg/XIAKELIN/TDAconf.html), Aug 2021. [Youtube](https://www.youtube.com/watch?v=T3SMuKf8ueo)
+- Persistent homotopy groups of metric spaces. [AATRN](https://tgda.osu.edu/atmcs2020/atmcs-2020-talks-hosted-by-the-aatn/), Jan 2021. [Youtube](https://www.youtube.com/watch?v=Pbnm45IutT8&t=250s)
 - Persistent homotopy groups of metric spaces. [MBI Seminar Series at OSU](https://mbi.osu.edu/events/mbi-seminar-series-ling-zhou), Sep 2020.
