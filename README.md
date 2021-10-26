@@ -27,6 +27,7 @@ I obtained my Bachelor's degree in Math and Applied Math at Sichuan University, 
 ## Python Projects
 
 - Steaming-Hot - Erdős Institute's Bootcamp May 2021
+
 This is a group project to build various models to classify, predict and do survival analysis of Steam games and user data. [GitHub](https://github.com/steaming-hot) and [Video presentation](https://drive.google.com/file/d/1pZIWsMBdvSpq5cdf2xH-lJJJgrjKoztv/view).
 My contribution includes 
 ● scrapping monthly time series data over the past 10 years of 10k+games,
@@ -34,4 +35,5 @@ My contribution includes
 ● a model to find similarity of the trends of different games, to provide advice for game developers.
 
 - Are you Van Gogh’s - Erdős Institute's Bootcamp May 2020
+
 This is a group project to build models for determining whether a painting is in Van Gogh’s style or not. [GitHub](https://github.com/francis2martinez/BootCampProject2020) and [Presentation Slides](https://docs.google.com/presentation/d/11L6OxCQGkGJyTAa-eNjrDz0ml1L8SGbakbviW9XhUVI/present?slide=id.p). In this project, I applied topological data analysis tool to study the brush strokes of the digitalization of the paintings.
