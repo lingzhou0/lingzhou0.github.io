@@ -29,7 +29,7 @@ I obtained my Bachelor's degree in Math and Applied Math at Sichuan University, 
 - [Steaming-Hot](https://github.com/steaming-hot) - Erdős Institute's Bootcamp May 2021
 
 This is a group project to project to study Steam games and user data, involving classification, prediction and survival analysis. See [video presentation](https://drive.google.com/file/d/1pZIWsMBdvSpq5cdf2xH-lJJJgrjKoztv/view).
-My contribution includes scrapping monthly time series data over the past 10 years of 10k+games, exploratory data analysis for 70k+ features of 57k+ games, using scatter matrix and histograms, and
+My contribution includes scrapping monthly time series data over the past 10 years of 10k+ games, exploratory data analysis for 70k+ features of 57k+ games using scatter matrix and histograms, and
 a model to find similarity of the trends of different games, to provide advice for game developers.
 
 - [Are you Van Gogh’s](https://github.com/francis2martinez/BootCampProject2020) - Erdős Institute's Bootcamp May 2020
