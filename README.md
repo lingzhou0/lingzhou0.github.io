@@ -28,7 +28,7 @@ I obtained my Bachelor's degree in Math and Applied Math at Sichuan University, 
 
 - [Steaming-Hot](https://github.com/steaming-hot) - Erdős Institute's Bootcamp May 2021
 
-This is a group project to project to study Steam games and user data, involving classification, prediction and survival analysis. See [Video presentation](https://drive.google.com/file/d/1pZIWsMBdvSpq5cdf2xH-lJJJgrjKoztv/view).
+This is a group project to project to study Steam games and user data, involving classification, prediction and survival analysis. See [video presentation](https://drive.google.com/file/d/1pZIWsMBdvSpq5cdf2xH-lJJJgrjKoztv/view).
 My contribution includes 
 ● scrapping monthly time series data over the past 10 years of 10k+games,
 ● exploratory data analysis for 70k+ features of 57k+ games, using scatter matrix and histograms,
@@ -36,4 +36,4 @@ My contribution includes
 
 - [Are you Van Gogh’s](https://github.com/francis2martinez/BootCampProject2020) - Erdős Institute's Bootcamp May 2020
 
-This is a group project to build models for determining whether a painting is in Van Gogh’s style or not. See [Presentation Slides](https://docs.google.com/presentation/d/11L6OxCQGkGJyTAa-eNjrDz0ml1L8SGbakbviW9XhUVI/present?slide=id.p). In this project, I applied topological data analysis tool to study the brush strokes of the digitalization of the paintings.
+This is a group project to build models for determining whether a painting is in Van Gogh’s style or not. See [presentation slides](https://docs.google.com/presentation/d/11L6OxCQGkGJyTAa-eNjrDz0ml1L8SGbakbviW9XhUVI/present?slide=id.p). In this project, I applied topological data analysis tool to study the brush strokes of the digitalization of the paintings.
