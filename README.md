@@ -1,6 +1,7 @@
 ### This page is out of date. Find my personal page here: [https://sites.google.com/view/lingzhou-math/home](https://sites.google.com/view/lingzhou-math/home)
 
 
+
 I am a PhD student in the [Department of Mathematics at the Ohio State University](https://math.osu.edu/), under the supervision of [Facundo Mémoli](https://people.math.osu.edu/memolitechera.1/index.html). I am also an organizer of the weekly meetings of the research group [Network Data Analysis at OSU](https://ndag.github.io/index.html).
 
 My research interests are applied algebraic topology, computational geometry, topological data analysis.
