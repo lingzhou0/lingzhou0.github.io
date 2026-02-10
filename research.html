@@ -73,6 +73,13 @@
             margin-left: 2em;
             margin-bottom: 1em;
         }
+        ol {
+            list-style-position: outside;
+            padding-left: 0;
+        }
+        ol > li {
+            margin-left: 2em;
+        }
         li {
             margin-bottom: 0.8em;
         }
@@ -84,6 +91,35 @@
             padding: 1em;
             margin: 1em 0;
             border-left: 4px solid #0066cc;
+        }
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            margin: 1em 0 1.5em 0;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            padding: 0.5em 1em;
+            background-color: #f0f0f0;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .filter-btn:hover {
+            background-color: #e0e0e0;
+        }
+        .filter-btn.active {
+            background-color: #0066cc;
+            color: white;
+            border-color: #0066cc;
+        }
+        .publication-item {
+            display: block;
+        }
+        .publication-item.hidden {
+            display: none;
         }
     </style>
 </head>
@@ -98,86 +134,144 @@
             <a href="teaching.html">Teaching</a>
         </div>
 
-        <h2>Publications</h2>
+        <h2>Publications and Preprints</h2>
 
-        <h3>2025</h3>
-        <div class="paper">
-            <p><strong>9. Finding the Cores of Higher Graphs Using Geometric and Topological Means: A Survey</strong></p>
-            <p>Inés García-Redondo, Claudia Landi, Sarah Percival, Anda Skeja, Bei Wang & L. Zhou</p>
-            <p>WinCompTop3 Proceedings, 2025</p>
-            <p><a href="https://www.arxiv.org/abs/2506.19857">arXiv:2506.19857</a></p>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="journal">Journal</button>
+            <button class="filter-btn" data-filter="conference">Conference</button>
+            <button class="filter-btn" data-filter="preprint">Preprint</button>
         </div>
 
-        <div class="paper">
-            <p><strong>8. Ephemeral Persistence Features and the Stability of Filtered Chain Complexes</strong></p>
-            <p>Mémoli, F., & Zhou, L.</p>
-            <p>Journal of Computational Geometry, 2025</p>
-            <p><a href="https://jocg.org/index.php/jocg/article/view/5193">Journal</a> (Special Issue of Selected Papers from SoCG 2023)</p>
-        </div>
-
-        <h3>2024</h3>
-        <div class="paper">
-            <p><strong>7. Persistent Homotopy Groups of Metric Spaces</strong></p>
-            <p>Mémoli, F., & Zhou, L.</p>
-            <p>Journal of Topology and Analysis, 2024</p>
-            <p><a href="https://www.worldscientific.com/doi/10.1142/S1793525324500018">Journal</a> | <a href="https://arxiv.org/abs/1912.12399">arXiv:1912.12399</a></p>
-        </div>
-
-        <h3>2023</h3>
-        <div class="paper">
-            <p><strong>6. Persistent Cup Product Structures and Related Invariants</strong></p>
-            <p>Mémoli, F., Stefanou, A. & Zhou, L.</p>
-            <p>Journal of Applied and Computational Topology, 2023</p>
-            <p><a href="https://link.springer.com/article/10.1007/s41468-023-00138-5">Journal</a> | <a href="https://arxiv.org/abs/2211.16642">arXiv:2211.16642</a></p>
-        </div>
-
-        <div class="paper">
-            <p><strong>5. Ephemeral Persistence Features and the Stability of Filtered Chain Complexes</strong></p>
-            <p>Mémoli, F., & Zhou, L.</p>
-            <p>39th International Symposium on Computational Geometry (SoCG 2023), 2023</p>
-            <p><a href="https://drops.dagstuhl.de/opus/volltexte/2023/17901/">Conference</a> | <a href="https://arxiv.org/abs/2208.11770">arXiv:2208.11770</a></p>
-        </div>
-
-        <h3>2022-2023</h3>
-        <div class="paper">
-            <p><strong>4. Toroidal Coordinates: Decorrelating Circular Coordinates With Lattice Reduction</strong></p>
-            <p>Scoccola, L., Gakhar, H., Bush, J., Schonsheck, N., Rask, T., Zhou, L., & Perea, J. A.</p>
-            <p>39th International Symposium on Computational Geometry (SoCG 2023), 2023</p>
-            <p><a href="https://drops.dagstuhl.de/opus/volltexte/2023/17907/">Conference</a> | <a href="https://arxiv.org/abs/2212.07201">arXiv:2212.07201</a></p>
-        </div>
-
-        <div class="paper">
-            <p><strong>3. Persistent Cup-Length</strong></p>
-            <p>Contessoto, M., Mémoli, F., Stefanou, A. & Zhou, L.</p>
-            <p>38th International Symposium on Computational Geometry (SoCG 2022), 2022</p>
-            <p><a href="https://drops.dagstuhl.de/opus/volltexte/2022/16039/">Conference</a> | <a href="https://arxiv.org/abs/2107.01553v4">arXiv:2107.01553v4</a></p>
-        </div>
-
-        <h3>2020</h3>
-        <div class="paper">
-            <p><strong>2. Reducing Parameter Space for Neural Network Training</strong></p>
-            <p>Qin, T., Zhou, L., & Xiu, D.</p>
-            <p>Theoretical and Applied Mechanics Letters, 2020</p>
-            <p><a href="https://www.sciencedirect.com/science/article/pii/S2095034920300301">Journal</a> | <a href="https://arxiv.org/abs/1805.08340">arXiv:1805.08340</a></p>
-        </div>
-
-        <h3>2019</h3>
-        <div class="paper">
-            <p><strong>1. Generalized Fourier Transforms Associated with the Oscillator Representation</strong></p>
-            <p>Huang, J. S., & Zhou, L.</p>
-            <p>Journal of Fourier Analysis and Applications, 2019</p>
-            <p><a href="https://link.springer.com/article/10.1007/s00041-019-09682-0">Journal</a></p>
-        </div>
-
-        <h2>Preprints</h2>
-        <ol>
-            <li><strong>Effective Resistance in Simplicial Complexes as Bilinear Forms: Generalizations and Properties</strong> - Inés García-Redondo, Claudia Landi, Sarah Percival, Anda Skeja, Bei Wang & L. Zhou - <a href="https://arxiv.org/abs/2511.10749">arXiv:2511.10749</a></li>
-            <li><strong>Doughnut or Mickey Mouse? Detecting Toroidal Structure in Data through Persistent Cup-Length</strong> - Ekaterina S. Ivshina, Galit Anikeeva & L. Zhou - <a href="https://arxiv.org/abs/2507.11151">arXiv:2507.11151</a></li>
-            <li><strong>Persistence and Topological Complexity</strong> - Facundo Mémoli & L. Zhou - <a href="https://arxiv.org/abs/2506.17888">arXiv:2506.17888</a></li>
-            <li><strong>Persistent Cohomology Operations and Gromov-Hausdorff Estimates</strong> - Medina-Mardones, A.M. & Zhou, L. - <a href="http://arxiv.org/abs/2503.17130">arXiv:2503.17130</a></li>
-            <li><strong>Persistent Sullivan Minimal Models of Metric Spaces</strong> - Zhou, L. (2023) - <a href="https://arxiv.org/abs/2310.06263">arXiv:2310.06263</a></li>
-            <li><strong>Gromov-Hausdorff Distances, Borsuk-Ulam Theorems, and Vietoris-Rips Complexes</strong> - Adams, H., et al. (2023) - <a href="https://arxiv.org/abs/2301.00246">arXiv:2301.00246</a></li>
-            <li><strong>Some Results About the Tight Span of Spheres</strong> - Lim, S., et al. (2021) - <a href="https://arxiv.org/abs/2112.12646">arXiv:2112.12646</a></li>
+        <ol reversed>
+            <li class="publication-item" data-category="preprint">
+                <div class="paper">
+                    <p><strong>Effective Resistance in Simplicial Complexes as Bilinear Forms: Generalizations and Properties</strong></p>
+                    <p>Inés García-Redondo, Claudia Landi, Sarah Percival, Anda Skeja, Bei Wang & L. Zhou</p>
+                    <p><em>Preprint</em></p>
+                    <p><a href="https://arxiv.org/abs/2511.10749">arXiv:2511.10749</a></p>
+                </div>
+            </li>
+            <li class="publication-item" data-category="preprint">
+                <div class="paper">
+                    <p><strong>Doughnut or Mickey Mouse? Detecting Toroidal Structure in Data through Persistent Cup-Length</strong></p>
+                    <p>Ekaterina S. Ivshina, Galit Anikeeva & L. Zhou</p>
+                    <p><em>Preprint</em></p>
+                    <p><a href="https://arxiv.org/abs/2507.11151">arXiv:2507.11151</a></p>
+                </div>
+            </li>
+            <li class="publication-item" data-category="conference">
+                <div class="paper">
+                    <p><strong>Finding the Cores of Higher Graphs Using Geometric and Topological Means: A Survey</strong></p>
+                    <p>Inés García-Redondo, Claudia Landi, Sarah Percival, Anda Skeja, Bei Wang & L. Zhou</p>
+                    <p>WinCompTop3 Proceedings, 2025</p>
+                    <p><a href="https://www.arxiv.org/abs/2506.19857">arXiv:2506.19857</a></p>
+                </div>
+            </li>
+            <li class="publication-item" data-category="preprint">
+                <div class="paper">
+                    <p><strong>Persistence and Topological Complexity</strong></p>
+                    <p>Facundo Mémoli & L. Zhou</p>
+                    <p><em>Preprint</em></p>
+                    <p><a href="https://arxiv.org/abs/2506.17888">arXiv:2506.17888</a></p>
+                </div>
+            </li>
+            <li class="publication-item" data-category="preprint">
+                <div class="paper">
+                    <p><strong>Persistent Cohomology Operations and Gromov-Hausdorff Estimates</strong></p>
+                    <p>Medina-Mardones, A.M. & Zhou, L.</p>
+                    <p><em>Preprint</em></p>
+                    <p><a href="http://arxiv.org/abs/2503.17130">arXiv:2503.17130</a></p>
+                </div>
+            </li>
+            <li class="publication-item" data-category="journal">
+                <div class="paper">
+                    <p><strong>Ephemeral Persistence Features and the Stability of Filtered Chain Complexes</strong></p>
+                    <p>Mémoli, F., & Zhou, L.</p>
+                    <p>Journal of Computational Geometry, 2025</p>
+                    <p><a href="https://jocg.org/index.php/jocg/article/view/5193">Journal</a> (Special Issue of Selected Papers from SoCG 2023)</p>
+                </div>
+            </li>
+            <li class="publication-item" data-category="journal">
+                <div class="paper">
+                    <p><strong>Persistent Homotopy Groups of Metric Spaces</strong></p>
+                    <p>Mémoli, F., & Zhou, L.</p>
+                    <p>Journal of Topology and Analysis, 2024</p>
+                    <p><a href="https://www.worldscientific.com/doi/10.1142/S1793525324500018">Journal</a> | <a href="https://arxiv.org/abs/1912.12399">arXiv:1912.12399</a></p>
+                </div>
+            </li>
+            <li class="publication-item" data-category="journal">
+                <div class="paper">
+                    <p><strong>Persistent Cup Product Structures and Related Invariants</strong></p>
+                    <p>Mémoli, F., Stefanou, A. & Zhou, L.</p>
+                    <p>Journal of Applied and Computational Topology, 2023</p>
+                    <p><a href="https://link.springer.com/article/10.1007/s41468-023-00138-5">Journal</a> | <a href="https://arxiv.org/abs/2211.16642">arXiv:2211.16642</a></p>
+                </div>
+            </li>
+            <li class="publication-item" data-category="conference">
+                <div class="paper">
+                    <p><strong>Ephemeral Persistence Features and the Stability of Filtered Chain Complexes</strong></p>
+                    <p>Mémoli, F., & Zhou, L.</p>
+                    <p>39th International Symposium on Computational Geometry (SoCG 2023), 2023</p>
+                    <p><a href="https://drops.dagstuhl.de/opus/volltexte/2023/17901/">Conference</a> | <a href="https://arxiv.org/abs/2208.11770">arXiv:2208.11770</a></p>
+                </div>
+            </li>
+            <li class="publication-item" data-category="conference">
+                <div class="paper">
+                    <p><strong>Toroidal Coordinates: Decorrelating Circular Coordinates With Lattice Reduction</strong></p>
+                    <p>Scoccola, L., Gakhar, H., Bush, J., Schonsheck, N., Rask, T., Zhou, L., & Perea, J. A.</p>
+                    <p>39th International Symposium on Computational Geometry (SoCG 2023), 2023</p>
+                    <p><a href="https://drops.dagstuhl.de/opus/volltexte/2023/17907/">Conference</a> | <a href="https://arxiv.org/abs/2212.07201">arXiv:2212.07201</a></p>
+                </div>
+            </li>
+            <li class="publication-item" data-category="preprint">
+                <div class="paper">
+                    <p><strong>Persistent Sullivan Minimal Models of Metric Spaces</strong></p>
+                    <p>Zhou, L.</p>
+                    <p><em>Preprint, 2023</em></p>
+                    <p><a href="https://arxiv.org/abs/2310.06263">arXiv:2310.06263</a></p>
+                </div>
+            </li>
+            <li class="publication-item" data-category="preprint">
+                <div class="paper">
+                    <p><strong>Gromov-Hausdorff Distances, Borsuk-Ulam Theorems, and Vietoris-Rips Complexes</strong></p>
+                    <p>Adams, H., et al.</p>
+                    <p><em>Preprint, 2023</em></p>
+                    <p><a href="https://arxiv.org/abs/2301.00246">arXiv:2301.00246</a></p>
+                </div>
+            </li>
+            <li class="publication-item" data-category="conference">
+                <div class="paper">
+                    <p><strong>Persistent Cup-Length</strong></p>
+                    <p>Contessoto, M., Mémoli, F., Stefanou, A. & Zhou, L.</p>
+                    <p>38th International Symposium on Computational Geometry (SoCG 2022), 2022</p>
+                    <p><a href="https://drops.dagstuhl.de/opus/volltexte/2022/16039/">Conference</a> | <a href="https://arxiv.org/abs/2107.01553v4">arXiv:2107.01553v4</a></p>
+                </div>
+            </li>
+            <li class="publication-item" data-category="preprint">
+                <div class="paper">
+                    <p><strong>Some Results About the Tight Span of Spheres</strong></p>
+                    <p>Lim, S., et al.</p>
+                    <p><em>Preprint, 2021</em></p>
+                    <p><a href="https://arxiv.org/abs/2112.12646">arXiv:2112.12646</a></p>
+                </div>
+            </li>
+            <li class="publication-item" data-category="journal">
+                <div class="paper">
+                    <p><strong>Reducing Parameter Space for Neural Network Training</strong></p>
+                    <p>Qin, T., Zhou, L., & Xiu, D.</p>
+                    <p>Theoretical and Applied Mechanics Letters, 2020</p>
+                    <p><a href="https://www.sciencedirect.com/science/article/pii/S2095034920300301">Journal</a> | <a href="https://arxiv.org/abs/1805.08340">arXiv:1805.08340</a></p>
+                </div>
+            </li>
+            <li class="publication-item" data-category="journal">
+                <div class="paper">
+                    <p><strong>Generalized Fourier Transforms Associated with the Oscillator Representation</strong></p>
+                    <p>Huang, J. S., & Zhou, L.</p>
+                    <p>Journal of Fourier Analysis and Applications, 2019</p>
+                    <p><a href="https://link.springer.com/article/10.1007/s00041-019-09682-0">Journal</a></p>
+                </div>
+            </li>
         </ol>
 
         <h2>Event Organization</h2>
@@ -221,5 +315,35 @@
             <em>Last updated: February 2026</em>
         </p>
     </div>
+
+    <script>
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const publications = document.querySelectorAll('.publication-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+
+                publications.forEach(pub => {
+                    if (filter === 'all') {
+                        pub.classList.remove('hidden');
+                    } else {
+                        const category = pub.getAttribute('data-category');
+                        if (category === filter) {
+                            pub.classList.remove('hidden');
+                        } else {
+                            pub.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
