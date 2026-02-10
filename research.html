@@ -76,9 +76,19 @@
         ol {
             list-style-position: outside;
             padding-left: 0;
+            counter-reset: item 17;
         }
         ol > li {
             margin-left: 2em;
+            counter-increment: item -1;
+            list-style: none;
+        }
+        ol > li::before {
+            content: counter(item) ". ";
+            font-weight: bold;
+            display: inline-block;
+            width: 2em;
+            margin-left: -2em;
         }
         li {
             margin-bottom: 0.8em;
