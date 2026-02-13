@@ -24,6 +24,9 @@
             
             /* Border colors */
             --border-light: #ddd;
+            
+            /* Site metadata */
+            --last-updated: "February 2026";
         }
         
         * {
@@ -113,8 +116,10 @@
         .course-code {
             font-size: 0.9em;
             color: #888;
-            margin-bottom: 0;
             font-style: italic;
+        }
+        .last-updated::after {
+            content: "Last updated: " var(--last-updated);
         }
     </style>
 </head>
@@ -133,40 +138,33 @@
         <h2>Duke University</h2>
 
         <div class="course-item">
-            <p class="semester-label">Spring 2026, <strong>Probability</strong>, <a href="https://docs.google.com/document/d/19Rl_lACfuyEqbuK4YvkWwMo6c_dQgrz4VzZWLZc7Kdw/edit?usp=sharing">Syllabus</a></p>
-            <p class="course-code">MATH230/MATH730/STA230, Sections 3 & 4</p>
+            <p class="semester-label">Spring 2026, <strong>Probability</strong>, <a href="https://docs.google.com/document/d/19Rl_lACfuyEqbuK4YvkWwMo6c_dQgrz4VzZWLZc7Kdw/edit?usp=sharing">Syllabus</a> · <span class="course-code">MATH230/MATH730/STA230, Sections 3 & 4</span></p>
         </div>
 
         <div class="course-item">
-            <p class="semester-label">Fall 2025, <strong>Topological Data Analysis</strong>, <a href="https://github.com/lingzhou0/math412-fall2025">Course Page</a></p>
-            <p class="course-code">MATH412/COMPSCI434/MATH713</p>
+            <p class="semester-label">Fall 2025, <strong>Topological Data Analysis</strong>, <a href="https://github.com/lingzhou0/math412-fall2025">Course Page</a> · <span class="course-code">MATH412/COMPSCI434/MATH713</span></p>
         </div>
 
         <div class="course-item">
-            <p class="semester-label">Spring 2025, <strong>Probability</strong>, <a href="https://docs.google.com/document/d/14-S1RgxfsRDdT8TNWyHUVsXqbsC3qHN9qSoIWGy3tu0/edit?usp=sharing">Syllabus</a></p>
-            <p class="course-code">MATH230/MATH730/STA230, Section 3</p>
+            <p class="semester-label">Spring 2025, <strong>Probability</strong>, <a href="https://docs.google.com/document/d/14-S1RgxfsRDdT8TNWyHUVsXqbsC3qHN9qSoIWGy3tu0/edit?usp=sharing">Syllabus</a> · <span class="course-code">MATH230/MATH730/STA230, Section 3</span></p>
         </div>
 
         <div class="course-item">
-            <p class="semester-label">Fall 2024, <strong>Probability</strong>, <a href="https://docs.google.com/document/d/19rWQAymL5YsQZhtKGPVkVBH9LanSN9m3fQTLuzU4xX8/edit?usp=sharing">Syllabus</a></p>
-            <p class="course-code">MATH230/MATH730/STA230, Sections 4 & 5</p>
+            <p class="semester-label">Fall 2024, <strong>Probability</strong>, <a href="https://docs.google.com/document/d/19rWQAymL5YsQZhtKGPVkVBH9LanSN9m3fQTLuzU4xX8/edit?usp=sharing">Syllabus</a> · <span class="course-code">MATH230/MATH730/STA230, Sections 4 & 5</span></p>
         </div>
 
         <div class="course-item">
-            <p class="semester-label">Summer 2024, <strong>Multivariable Calculus</strong>, <a href="https://docs.google.com/document/d/1-n3RK1YUBoO7lOmgbIr_EwAYFXHY2dn0z1M_2-57qEQ/edit?usp=sharing">Syllabus</a></p>
-            <p class="course-code">MATH212</p>
+            <p class="semester-label">Summer 2024, <strong>Multivariable Calculus</strong>, <a href="https://docs.google.com/document/d/1-n3RK1YUBoO7lOmgbIr_EwAYFXHY2dn0z1M_2-57qEQ/edit?usp=sharing">Syllabus</a> · <span class="course-code">MATH212</span></p>
         </div>
 
         <div class="course-item">
-            <p class="semester-label">Spring 2024, <strong>Linear Algebra - Discussion Sessions</strong></p>
-            <p class="course-code">MATH218-D</p>
+            <p class="semester-label">Spring 2024, <strong>Linear Algebra - Discussion Sessions</strong> · <span class="course-code">MATH218-D</span></p>
         </div>
 
         <h2>The Ohio State University</h2>
 
         <div class="course-item">
-            <p class="semester-label">Fall 2022, Teaching Assistant, <strong>Engineering Mathematics B</strong></p>
-            <p class="course-code">MATH2173</p>
+            <p class="semester-label">Fall 2022, Teaching Assistant, <strong>Engineering Mathematics B</strong> · <span class="course-code">MATH2173</span></p>
         </div>
 
         <div class="course-item">
@@ -181,29 +179,25 @@
         </div>
 
         <div class="course-item">
-            <p class="semester-label">Spring 2019, Teaching Assistant, <strong>Calculus II</strong></p>
-            <p class="course-code">MATH1172</p>
+            <p class="semester-label">Spring 2019, Teaching Assistant, <strong>Calculus II</strong> · <span class="course-code">MATH1172</span></p>
         </div>
 
         <h2>Hong Kong University of Science and Technology</h2>
 
         <div class="course-item">
-            <p class="semester-label">Spring 2017, Teaching Assistant, <strong>Introduction to Lie Groups</strong>, <a href="https://zhouling0903.wixsite.com/math4151t">Recitation Notes</a></p>
-            <p class="course-code">MATH4151</p>
+            <p class="semester-label">Spring 2017, Teaching Assistant, <strong>Introduction to Lie Groups</strong>, <a href="https://zhouling0903.wixsite.com/math4151t">Recitation Notes</a> · <span class="course-code">MATH4151</span></p>
         </div>
 
         <div class="course-item">
-            <p class="semester-label">Fall 2016, Teaching Assistant, <strong>Real Analysis</strong></p>
-            <p class="course-code">MATH3033</p>
+            <p class="semester-label">Fall 2016, Teaching Assistant, <strong>Real Analysis</strong> · <span class="course-code">MATH3033</span></p>
         </div>
 
         <div class="course-item">
-            <p class="semester-label">Spring 2016, Teaching Assistant, <strong>Calculus II</strong></p>
-            <p class="course-code">MATH1014</p>
+            <p class="semester-label">Spring 2016, Teaching Assistant, <strong>Calculus II</strong> · <span class="course-code">MATH1014</span></p>
         </div>
 
         <p style="margin-top: 3em; color: #666; font-size: 0.9em;">
-            <em>Last updated: February 2026</em>
+            <em class="last-updated"></em>
         </p>
     </div>
 </body>

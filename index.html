@@ -25,6 +25,9 @@
             
             /* Border colors */
             --border-light: #ddd;
+            
+            /* Site metadata */
+            --last-updated: "February 2026";
         }
         
         * {
@@ -110,6 +113,9 @@
         .highlight {
             background-color: var(--bg-highlight);
             padding: 0.2em 0.4em;
+        }
+        .last-updated::after {
+            content: "Last updated: " var(--last-updated);
         }
     </style>
 </head>
@@ -201,7 +207,7 @@
         </ul>
 
         <p style="margin-top: 3em; color: #666; font-size: 0.9em;">
-            <em>Last updated: February 2026</em>
+            <em class="last-updated"></em>
         </p>
     </div>
 </body>

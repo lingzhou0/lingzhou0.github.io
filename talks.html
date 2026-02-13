@@ -24,6 +24,9 @@
             
             /* Border colors */
             --border-light: #ddd;
+            
+            /* Site metadata */
+            --last-updated: "February 2026";
         }
         
         * {
@@ -102,6 +105,9 @@
             padding: 0.8em;
             margin: 0.8em 0;
             border-left: 3px solid var(--primary-color);
+        }
+        .last-updated::after {
+            content: "Last updated: " var(--last-updated);
         }
     </style>
 </head>
@@ -363,7 +369,7 @@
         <p>I give talks regularly in the <a href="https://ndag.github.io/etc/group-meetings.html">NDA group meeting</a>, one to two talks per semester during 2018-2023.</p>
 
         <p style="margin-top: 3em; color: #666; font-size: 0.9em;">
-            <em>Last updated: February 2026</em>
+            <em class="last-updated"></em>
         </p>
     </div>
 </body>
