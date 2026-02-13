@@ -117,10 +117,30 @@
         .last-updated::after {
             content: "Last updated: " var(--last-updated);
         }
+        .profile-photo {
+            float: right;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--primary-color);
+            margin: 0 0 1em 2em;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        @media (max-width: 600px) {
+            .profile-photo {
+                float: none;
+                display: block;
+                margin: 0 auto 1em auto;
+                width: 150px;
+                height: 150px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="Back%20up/Ling.JPG" alt="Ling Zhou" class="profile-photo">
         <h1>Ling Zhou</h1>
         <p><strong>Phillip Griffiths Assistant Research Professor</strong><br>
         Department of Mathematics<br>
