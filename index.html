@@ -6,6 +6,9 @@
     <title>Ling Zhou</title>
     <style>
         :root {
+            /* Site metadata */
+            --last-updated: "March 2026";
+
             /* Primary theme colors */
             --primary-color: #012169;
             --primary-hover: #001147;
@@ -25,9 +28,6 @@
             
             /* Border colors */
             --border-light: #ddd;
-            
-            /* Site metadata */
-            --last-updated: "February 2026";
         }
         
         * {
@@ -136,6 +136,14 @@
         }
     </style>
 </head>
+<script>
+const lastModified = new Date(document.lastModified);
+
+const options = { year: 'numeric', month: 'long' };
+
+document.getElementById("last-updated").textContent =
+    "Last updated: " + lastModified.toLocaleDateString('en-US', options);
+</script>
 <body>
     <div class="container">
         <!-- <img src="Ling.jpg" alt="Ling Zhou" class="profile-photo"> -->
@@ -230,7 +238,7 @@
         </ul>
 
         <p style="margin-top: 3em; color: #666; font-size: 0.9em;">
-            <em class="last-updated"></em>
+            <em id="last-updated"></em>
         </p>
     </div>
 </body>
