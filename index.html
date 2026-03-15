@@ -6,9 +6,6 @@
     <title>Ling Zhou</title>
     <style>
         :root {
-            /* Site metadata */
-            --last-updated: "March 2026";
-
             /* Primary theme colors */
             --primary-color: #012169;
             --primary-hover: #001147;
@@ -114,9 +111,6 @@
             background-color: var(--bg-highlight);
             padding: 0.2em 0.4em;
         }
-        .last-updated::after {
-            content: "Last updated: " var(--last-updated);
-        }
         .profile-photo {
             float: right;
             width: 180px;
@@ -136,14 +130,6 @@
         }
     </style>
 </head>
-<script>
-const lastModified = new Date(document.lastModified);
-
-const options = { year: 'numeric', month: 'long' };
-
-document.getElementById("last-updated").textContent =
-    "Last updated: " + lastModified.toLocaleDateString('en-US', options);
-</script>
 <body>
     <div class="container">
         <!-- <img src="Ling.jpg" alt="Ling Zhou" class="profile-photo"> -->
@@ -241,5 +227,13 @@ document.getElementById("last-updated").textContent =
             <em id="last-updated"></em>
         </p>
     </div>
+    <script>
+        const lastModified = new Date(document.lastModified);
+
+        const options = { year: 'numeric', month: 'long' };
+
+        document.getElementById("last-updated").textContent =
+            "Last updated: " + lastModified.toLocaleDateString('en-US', options);
+    </script>
 </body>
 </html>
