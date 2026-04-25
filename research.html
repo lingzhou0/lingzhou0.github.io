@@ -17,7 +17,6 @@
     --bg-nav:#f0f0f0;
     --bg-nav-hover:#e0e0e0;
     --border-light:#ddd;
-    --last-updated:"February 2026";
 }
 
 *{
@@ -140,9 +139,6 @@ border-color:var(--primary-color);
 display:none;
 }
 
-.last-updated::after{
-content:"Last updated: " var(--last-updated);
-}
 </style>
 </head>
 
@@ -315,12 +311,17 @@ Jing-Song Huang & L. Zhou.<br>
 </ol>
 
 <p style="margin-top:3em;color:#666;font-size:0.9em;">
-<em class="last-updated"></em>
+<em id="last-updated"></em>
 </p>
 
 </div>
 
 <script>
+const lastModified=new Date(document.lastModified);
+const options={year:'numeric',month:'long'};
+document.getElementById("last-updated").textContent=
+"Last updated: "+lastModified.toLocaleDateString('en-US',options);
+
 const filterButtons=document.querySelectorAll('.filter-btn');
 const publications=document.querySelectorAll('.publication-item');
 
