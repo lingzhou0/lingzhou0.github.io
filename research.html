@@ -135,7 +135,8 @@ color:white;
 border-color:var(--primary-color);
 }
 
-.publication-item.hidden{
+.publication-item.hidden,
+ol > h3.hidden{
 display:none;
 }
 
@@ -394,6 +395,24 @@ document.getElementById("last-updated").textContent=
 
 const filterButtons=document.querySelectorAll('.filter-btn');
 const publications=document.querySelectorAll('.publication-item');
+const publicationYears=document.querySelectorAll('ol > h3');
+
+function updatePublicationYears(){
+publicationYears.forEach(year=>{
+let item=year.nextElementSibling;
+let hasVisiblePublication=false;
+
+while(item&&item.tagName!=='H3'){
+if(item.classList.contains('publication-item')&&!item.classList.contains('hidden')){
+hasVisiblePublication=true;
+break;
+}
+item=item.nextElementSibling;
+}
+
+year.classList.toggle('hidden',!hasVisiblePublication);
+});
+}
 
 filterButtons.forEach(button=>{
 button.addEventListener('click',()=>{
@@ -410,6 +429,7 @@ const category=pub.getAttribute('data-category');
 pub.classList.toggle('hidden',category!==filter);
 }
 });
+updatePublicationYears();
 });
 });
 </script>
