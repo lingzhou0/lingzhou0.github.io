@@ -59,3 +59,8 @@ ENV/
 backup/
 Python project/
 Backup/
+
+AGENTS.md
+CLAUDE.md
+.agents/
+.claude/
